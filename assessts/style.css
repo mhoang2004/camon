@@ -1,0 +1,196 @@
+* {
+    box-sizing: inherit; 
+    /* kế thừa */
+}
+
+html {
+    font-size: 62.5%; 
+   /* tương đương 10px */
+   font-family: 'Roboto', sans-serif;
+   /* san-serit là chủng chữ không có chân, nếu roboto ko tải đc thì sans-serif hiển thị thay */
+   box-sizing: border-box;
+}
+
+.header {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 100%;
+    height: 65vh;
+    background-color: #0fb47c;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__desc {
+    display: block;
+}
+
+.header__title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 50px;
+
+}
+
+.header__career {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+
+}
+
+.header__link {
+    display: block;
+    color: #fff;
+    margin-top: 50px
+}
+
+.header__link a {
+    text-decoration: none;
+}
+
+.header__link a:hover {
+    opacity: 0.7;
+}
+
+.header__icon {
+    margin: 0 16px;
+    font-size: 2rem;
+    background: #0fb47c;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.Circle {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    padding: 8px;
+    background: #0fb47c;
+    border: 1px solid #0ab57c;
+    color: #fff;
+    text-align: center;
+}
+
+.content {
+    
+    display: flex;
+    position: relative;
+    top: -30vh;
+    right: -12.5vw;
+    width: 75vw;
+    height: 60vh;
+    background-color: #ffffff;
+}
+
+.content__container {
+    position: relative;
+    padding: 16px;
+    width: 100%;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.content__img {
+    image-rendering: pixelated;
+    object-fit: fill;
+    height: 100%;
+    width: 40%;
+}
+
+
+.content__greeting {
+    position: relative;
+    border-radius: 5px;
+    margin-left: 128px;
+    background-color: #0fb47c;
+    color: #fff;
+    width: 30%;
+    font-size: 2rem;
+    padding: 8px;
+    text-align: center;
+}
+
+.content__greeting::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 30px;
+    border-width: 20px 26px;
+    border-style: solid;
+    border-color: #10b47d transparent  transparent transparent ;
+}
+
+.content__name {
+    color: #8d9a96;
+    margin-top: 12px;
+    font-size: 2.5rem;
+
+}
+
+.content__name span {
+    color: #3d9d7d;
+    font-weight: 700;
+}
+
+.content__career {
+    color: #989d9b;
+    margin: 0  0 16px;
+    font-size: 2.3rem;
+}
+
+.content__info {    
+    display: flex;
+}
+
+.content__question-list {
+    padding: 0;  
+}
+
+.content__question-list li {
+    list-style: none;
+    padding: 8px 0 8px 0;
+    color: #000;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.content__answer-list li{
+    list-style: none;
+    padding: 8px;
+    color: #8f8f8f;
+    font-size: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.content__link {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #10b47d;
+    height: 14vh
+}
+
+.content__link a {
+    text-decoration: none;
+}
+
+.content__link a:hover {
+    color: #666;
+    opacity: 0.7;
+}
+
+.content__icon {
+    color: #fff;
+    font-size: 2.4rem;
+}
